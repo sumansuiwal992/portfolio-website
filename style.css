@@ -35,7 +35,6 @@ html{
     min-height:100vh; 
     padding-top:200px;
      position:relative;
-    
      }
   .hi{
      color:var(--accent); 
@@ -50,6 +49,7 @@ html{
     }  
 .section{
     margin-top:10px;
+    margin-bottom:15%;
 }
 .about-img{
   width:220px;
@@ -59,7 +59,6 @@ html{
   border:3px solid var(--accent);
   box-shadow:0 20px 50px rgba(79,209,197,0.2);
 }
-
 .about-stat{
   background:var(--card);
   border:1px solid var(--line);
@@ -81,4 +80,30 @@ html{
   color:var(--muted);
   font-size:.8rem;
   margin:0;
+}
+.sec-title{
+    margin-bottom:5%;
+}
+.Skills-box{
+    background:var(--card);
+    border:1px soild var(--line);
+    border-radius:12px;
+    padding:1.3rem;
+    transition: 25s;
+}
+.Skills-box:hover{
+    border-color:var(--accent);
+    transform:translateY(-4px);
+}
+.Skills-box h3{
+    font-size:1.0rem;
+    margin-bottom:.7rem;
+    font-weight:500;
+}
+.progress{
+    height:6px;
+    background:var(--line);
+}
+.progress-bar{
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
 }
