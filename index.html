@@ -183,7 +183,7 @@
       </section>
 
     <!--Contact section-->
-    <section class="section container"id="contact">
+    <section class="section container"id="Contact">
       <h2 class="sec-title"><span class="num">04.</span> Contact</h2>
       <div class="contact-box mx-auto">
         <form id="contactForm">
@@ -205,7 +205,7 @@
         </div>
       </div>
     </section>
-    
+    <!--Footer section-->
     <footer class="text-center">
       <div class="social-icons mb-3">
         <a href="https://www.linkedin.com/in/suman-suiwal" target="_blank" class="social-link">
@@ -217,6 +217,26 @@
       </div>
       <p>&copy; <span id="year"></span> Suman Suiwal - Built with HTML, CSS, Bootstrap 5 &amp; JavaScript</p>
     </footer>
-</body>
+   <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
 
+  // Close mobile menu on link click
+  document.querySelectorAll('#navMenu .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const nav = document.getElementById('navMenu');
+      if (nav.classList.contains('show')) {
+        new bootstrap.Collapse(nav).toggle();
+      }
+    });
+  });
+// Contact form (demo only)
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('formMsg').style.display = 'block';
+    this.reset();
+  });
+</script>
+</body>
 </html>
