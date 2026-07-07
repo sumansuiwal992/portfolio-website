@@ -180,3 +180,27 @@ html{
 .contact-info a:hover{
     color: var(--accent);
 }
+
+.social-icons{
+    display:flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.social-link{
+    width:52px;
+    height:52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px soild var(--line);
+    border-radius: 50%;
+    color:var(--muted);
+    font-size:1.6rem;
+    text-decoration: none;
+    transition:25s;
+}
+.social-link:hover{
+    border-color:var(--accent);
+    color:var(--accent);
+    transform:translateY(-3px);
+}
